@@ -1,2 +1,0 @@
-var html='<h1>hello world</h1>'
-exports.html=html;
