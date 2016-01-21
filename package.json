@@ -1,0 +1,26 @@
+{
+  "name": "github01",
+  "version": "1.1.0",
+  "description": "nodejs and requirejs framet",
+  "main": "r_build.js",
+  "scripts": {
+    "test": "node node_start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lclror/github-learn.git"
+  },
+  "keywords": [
+    "learn",
+    "github",
+    "node",
+    "requirejs",
+    "react"
+  ],
+  "author": "lcl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lclror/github-learn/issues"
+  },
+  "homepage": "https://github.com/lclror/github-learn#readme"
+}
