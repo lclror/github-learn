@@ -10,7 +10,7 @@
 }(function(  ) { 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 function G_test(opts){
-this.html='<h1>h1 is here</h1>';
+this.html='';
 
 this.id='#xxx' 				
 this.opts=$.extend({},G_test.STATE,opts)
@@ -22,15 +22,29 @@ G_test.STATE={
 
 G_test.prototype.main=function(){var state=this.opts; var $this=this	
 //~~~~~~~~~~~~~~~~~~~~~~
-$("h1").click(function(e) {
+/*$("h1").click(function(e) {
 	//alert(123)
 	var $h1=$(this)
 	$h1.addClass('click')
 	function removeclass(){
 		$h1.removeClass('click')	
 	}
+	
 	setTimeout(function(){removeclass()},200)
-});
+});*/
+
+$("#div01").on('click',[$("#div01")],function(){
+	/*var $target= $(e.target)
+	$target.addClass('click')
+	function removeclass(){
+		$target.removeClass('click')	
+	}
+	setTimeout(function(){removeclass()},200)*/
+	$(this).append('<div id="div01">div next</div>')
+})
+$("h1").on('click',$("h1"),function(){
+	alert('h1 is here')	
+})
 //~~~~~~~~~~~~~~~~~~~~~~
 }
 
