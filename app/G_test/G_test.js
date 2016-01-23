@@ -51,6 +51,11 @@ $("h1").on('click',$("h1"),function(){
 
 G_test.prototype.render=function(){var state=this.opts
 //~~~~~~~~~~~~~~~~~~~~~~
+var a=2;
+function foo(){alert(a)}
+function bar(){var a=3;foo()}
+
+bar()
 
 //~~~~~~~~~~~~~~~~~~~~~~
 }
