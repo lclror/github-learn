@@ -1,0 +1,23 @@
+#G_login{
+	height:25px;
+	line-height:25px;
+	overflow:visible;}
+#G_login>.div2>span{
+	padding-left:10px;
+	padding-right:10px;
+	color:#fff;}
+	
+#G_login>.form1{
+	background-color: #eee;
+	width:400px;
+	height:200px;
+	position:absolute;
+	left:50%;
+	margin-left:-200px;
+	top:50px;
+	display:none;}	
+	
+/*#G_login>.div2>.span2,
+#G_login>.div2>.span3{
+	display:none;}*/	
+

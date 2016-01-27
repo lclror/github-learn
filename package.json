@@ -22,5 +22,16 @@
   "bugs": {
     "url": "https://github.com/lclror/github-learn/issues"
   },
-  "homepage": "https://github.com/lclror/github-learn#readme"
+  "homepage": "https://github.com/lclror/github-learn#readme",
+  "devDependencies": {
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "morgan": "^1.6.1",
+    "multer": "^1.1.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "dependencies": {
+    "multer": "^1.1.0"
+  }
 }
