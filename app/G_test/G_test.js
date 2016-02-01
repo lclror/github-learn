@@ -22,40 +22,32 @@ G_test.STATE={
 
 G_test.prototype.main=function(){var state=this.opts; var $this=this	
 //~~~~~~~~~~~~~~~~~~~~~~
-/*$("h1").click(function(e) {
-	//alert(123)
-	var $h1=$(this)
-	$h1.addClass('click')
-	function removeclass(){
-		$h1.removeClass('click')	
-	}
-	
-	setTimeout(function(){removeclass()},200)
-});*/
+$("#login02>button").click(function(e) {
+	var name=$("input:first").val()
+	var pass=$("input:last").val()
+	$.get('/login02',{username:name,password:pass},function(res){
+		/*if(res[0]==null){
+			$("p.p01").text('error')	
+		}else{
+			alert(res[0].count)
+			$("p.p01").text(res.count)	
+		}*/
+		alert(res[0].name)	
+	},/*'json'*/'json')
+});
 
-$("#div01").on('click',[$("#div01")],function(){
-	/*var $target= $(e.target)
-	$target.addClass('click')
-	function removeclass(){
-		$target.removeClass('click')	
-	}
-	setTimeout(function(){removeclass()},200)*/
-	$(this).append('<div id="div01">div next</div>')
-})
-$("h1").on('click',$("h1"),function(){
-	alert('h1 is here')	
-})
+
+$("p.p01").click(function(e) {
+	$.get('/cachetest',{},function(result){
+		alert(result)
+	},'html')
+});
 //~~~~~~~~~~~~~~~~~~~~~~
 }
 
 
 G_test.prototype.render=function(){var state=this.opts
 //~~~~~~~~~~~~~~~~~~~~~~
-/*var a=2;
-function foo(){alert(a)}
-function bar(){var a=3;foo()}
-
-bar()*/
 
 //~~~~~~~~~~~~~~~~~~~~~~
 }

@@ -22,12 +22,12 @@ app.use(cookie())
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*var P_new01=require('./p_news/node_P_new01')
 P_new01.routerall(app)*/
-var test=require('./G_test/node_G_test')
-test.routerall(app)
 
-var G_login=require('./G_login/node_G_login')
-G_login.ajax(app)
-/*//process 的情况下
+
+/*var G_login=require('./G_login/node_G_login')
+G_login.ajax(app)*/
+
+/*//process 的情况下 在启动文件测试 写法格式
 var html=G_login.html
 var $=cheerio.load(html)
 var G_loginpress=G_login.process($)
@@ -36,9 +36,12 @@ app.get('/test',G_loginpress,function(req,res){
 	res.send(html)	
 })*/
 
-
+/*//文件上传
 var G_upload=require('./G_upload/node_G_upload')
-G_upload.ajax(app)
+G_upload.ajax(app)*/
+
+var test=require('./G_test/node_G_test')
+test.ajax(app)
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 app.listen(/*app.get('port')*/3000,function(){console.log('running ')})
