@@ -97,8 +97,8 @@ if(state.loginstate=='on'){
 //~~~~~~~~~~~~~~~~~~~~~~
 }
 
-//$.fn.addModule($('body'),'G_login',G_login) 		
-return G_login;	
+$.fn.addModule($('body'),'G_login',G_login) 		
+//return G_login;	
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 }))
