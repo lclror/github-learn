@@ -11,10 +11,11 @@ function ajax(app1){
 				//console.log(err)
 				console.log(result.ops)
 					
-				if(err==null){
+				if(err){
 					res.send([{status:'error'}])	
 				}else{
 					res.send([{status:'success'}])
+					//res.redirect('/new01')
 				}
 			})
 				

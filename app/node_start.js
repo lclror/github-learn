@@ -1,6 +1,7 @@
 var express = require('express');
-
 var app = express();
+
+
 app.use(express.static('./'))
 //app.set('port','3000');
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -47,11 +48,20 @@ test.ajax(app)*/
 /*var G_login=require('./G_login/node_G_login02')
 G_login.ajax(app)*/
 
+//新闻模块2
 var P_new01=require('./P_index/node_P_new01')
 P_new01.routerall(app)
 
+//新闻模块02之内容写库页路由接口
 var G_uploadtext=require('./G_uploadtext/node_G_uploadtext')
 G_uploadtext.ajax(app)
+
+
+
+
+
+
+
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 app.listen(/*app.get('port')*/3000,function(){console.log('running ')})

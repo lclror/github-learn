@@ -30,7 +30,10 @@ $("div#save01>button").click(function(e) {
 	}else{
 		
 		$.get('/uploadtext',{title:title,text:text},function(result){
-			alert(result[0].status)	
+			//alert(result[0].status)	
+			if(result[0].status=='success'){
+				window.location='http://localhost:3000/new01'
+			}
 		},'json')	
 	}
 })
