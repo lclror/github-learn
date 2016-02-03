@@ -25,7 +25,6 @@
   "homepage": "https://github.com/lclror/github-learn#readme",
   "devDependencies": {
     "cookie-parser": "^1.4.1",
-    "express": "^4.13.4",
     "express-session": "^1.13.0",
     "memory-cache": "^0.1.4",
     "morgan": "^1.6.1",
