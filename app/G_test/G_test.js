@@ -10,7 +10,14 @@
 }(function(  ) { 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
 function G_test(opts){
-this.html='';
+this.html='\
+<div id="login02">\
+	<input type="text">\
+	<input type="text">\
+	<button>button</button>\
+</div>\
+<p class="p01">p01</p>\
+';
 
 this.id='#xxx' 				
 this.opts=$.extend({},G_test.STATE,opts)
@@ -32,7 +39,7 @@ $("#login02>button").click(function(e) {
 			alert(res[0].count)
 			$("p.p01").text(res.count)	
 		}*/
-		alert(res[0].name)	
+		alert(res)	
 	},/*'json'*/'json')
 });
 

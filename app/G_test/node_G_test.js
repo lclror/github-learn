@@ -49,7 +49,7 @@ function ajax(app1){
 		//大大减少了数据库的压力,同时也优化了前台的响应时间.
 		//一般都缓存一个页面，要是缓存在模块级别颗粒的话，增加了代码的复杂度.
 		
-		var new01=cache.get('new01')  //此时的key值肯定是空，下面的判断为空时才去查库。
+		/*var new01=cache.get('new01')  //此时的key值肯定是空，下面的判断为空时才去查库。
 		if(new01==null){
 			coll_test01.find({_id:9}).toArray(function(err,result){
 				cache.put('new01',result,6000) //查完库之后就把数据存入缓存
@@ -61,7 +61,7 @@ function ajax(app1){
 			//var new01=cache.get('new01')  //就没有必要再次取数据了
 			console.log(new01)
 			res.send(new01)
-		}
+		}*/
 		
 		/*//此种方法不行，因为查询需要消耗一定时间，而与此同时下面的发送语句就开始执行了，所以发送的是空值。
 		if(new01==null){

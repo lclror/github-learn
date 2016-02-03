@@ -1,0 +1,9 @@
+div#save01{
+	width:20%;
+	padding:10px;
+	background-color: #ccc;}
+div#save01>input{
+	width:100%;
+	margin-bottom:10px;}
+div#save01>textarea{
+	width:100%;}	

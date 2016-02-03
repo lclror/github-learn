@@ -40,8 +40,18 @@ app.get('/test',G_loginpress,function(req,res){
 var G_upload=require('./G_upload/node_G_upload')
 G_upload.ajax(app)*/
 
-var test=require('./G_test/node_G_test')
-test.ajax(app)
+/*var test=require('./G_test/node_G_test')
+test.ajax(app)*/
+
+
+/*var G_login=require('./G_login/node_G_login02')
+G_login.ajax(app)*/
+
+var P_new01=require('./P_index/node_P_new01')
+P_new01.routerall(app)
+
+var G_uploadtext=require('./G_uploadtext/node_G_uploadtext')
+G_uploadtext.ajax(app)
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 app.listen(/*app.get('port')*/3000,function(){console.log('running ')})
